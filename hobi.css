@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #b9e5e8, #7ab2d3);
+  color: #4a628a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dff2eb;
+  padding: 15px;
+  border-bottom: 1px solid #4a628a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a628a;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: #dff2eb;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  width: 100%;
+  padding: 30px 25px;
+  text-align: center;
+}
+
+.card h1 {
+  font-size: 24px;
+  color: #4a628a;
+  margin-bottom: 20px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  font-size: 16px;
+  color: #4a628a;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #4a628a;
+  color: #dff2eb;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #4a628a;
+  transform: translateY(-2px);
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4a628a;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 12px 0;
+  background: #dff2eb;
+  font-size: 14px;
+  color: #4a628a;
+  border-top: 1px solid #4a628a;
+}
+
+footer p {
+  color: #4a628a;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #4a628a;
+  color: #dff2eb;
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Responsif */
+@media (max-width: 500px) {
+  .card {
+    padding: 20px 15px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

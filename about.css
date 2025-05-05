@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* Reset dan Dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #b9e5e8, #7ab2d3);
+  color: #4a628a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #dff2eb;
+  width: 100%;
+  padding: 16px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #4a628a;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a628a;
+  text-align: center;
+}
+
+/* Konten Utama */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+/* Kartu Konten */
+.card {
+  background-color: #dff2eb;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  max-width: 480px;
+  width: 100%;
+  padding: 32px 28px;
+  text-align: center;
+}
+
+.card h1 {
+  font-size: 26px;
+  color: #4a628a;
+  margin-bottom: 20px;
+}
+
+/* Paragraf */
+.about-text {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #4a628a;
+}
+
+/* Tombol */
+.button {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #dff2eb;
+  color: #b9e5e8;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #4a628a;
+  transform: translateY(-2px);
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4a628a;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 12px 0;
+  background-color: #dff2eb;
+  font-size: 14px;
+  color: #4a628a;
+  border-top: 1px solid #4a628a;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 500px) {
+  .card {
+    padding: 24px 18px;
+  }
+
+  .card h1 {
+    font-size: 22px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 12px 0;
+  }
+}

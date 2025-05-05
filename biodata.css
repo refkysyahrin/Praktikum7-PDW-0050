@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* Reset & dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #b9e5e8, #7ab2d3);
+  color: #4a628a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: #dff2eb;
+  width: 100%;
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #4a628a;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a628a;
+  text-align: center;
+}
+
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+/* Kartu Biodata */
+.card {
+  background: #dff2eb;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  width: 100%;
+  padding: 35px 30px;
+  text-align: center;
+}
+
+.card h1 {
+  font-size: 28px;
+  color: #4a628a;
+  margin-bottom: 25px;
+}
+
+.bio-list {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.bio-list li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Tombol utama */
+.button {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #dff2eb;
+  color: #b9e5e8;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background: #4a628a;
+  transform: translateY(-2px);
+}
+
+/* Link kembali */
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4a628a;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  color: #4a628a;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 14px 0;
+  background: #dff2eb;
+  font-size: 14px;
+  color: #4a628a;
+  border-top: 1px solid #4a628a;
+}
+
+/* Responsif kecil */
+@media (max-width: 500px) {
+  .card {
+    padding: 25px 18px;
+  }
+  .card h1 {
+    font-size: 24px;
+  }
+  .button {
+    width: 100%;
+  }
+}
